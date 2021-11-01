@@ -18,6 +18,8 @@ font-family: 'Open Sans', sans-serif;
 */
 html{
     font-size: 62.5%;
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -35,7 +37,10 @@ h1{
 
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase; /*letra maiuscula*/
+    line-height: 1.2;
 }
 
 h3{
@@ -62,6 +67,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    margin-bottom: 3rem;
+}
+
 .main-fundo2{
     background-image: url('../img/fundo2.svg');
     background-size: cover;
@@ -71,12 +80,13 @@ a{
 
 .white-fundo2{
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 8rem var(--gap);
 }
 
 .section{
@@ -150,7 +160,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .inicio-text-content, .intro-img{
@@ -159,15 +169,88 @@ a{
     justify-content: center;
 }
 
-.inicio-text-content h2{
-    font-size: 6rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase; /*letra maiuscula*/
-    line-height: 1.2;
-}
-
 .inicio-img img{
     max-width: 100%;
     height: auto;
     margin-top: 27rem;
+}
+
+.promocao-content{
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.marcas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+.marcas-v h2{
+    text-align: center;
+}
+
+.marcas-v p{
+    text-align: center;
+}
+
+.marcas-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.marcas-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.marcas-img img:hover{
+    transform: translate(-3%, 3%)  scale(1) ;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    margin-top: 10rem;
+}
+
+.produtos-v h2{
+    text-align: center;
+}
+
+.produtos-v p{
+    text-align: center;
+}
+
+.produtos-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.65);
+}
+
+.produtos-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.produtos-img img:hover{
+    transform: translate(-3%, 3%)  scale(1) ;
+}
+
+.contato-content{
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
 }
