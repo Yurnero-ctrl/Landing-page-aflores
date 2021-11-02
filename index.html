@@ -11,14 +11,18 @@
     rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
+<input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+<label class="close-menu-label" for="close-menu" title="close menu"></label>
+
 <body class="main-fundo2">
     <aside class="menu white-fundo2">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="#">AFLORES</a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#promocao">Promoções</a></li>
                     <li><a href="#marcas">Marcas</a></li>
@@ -60,19 +64,15 @@
 
             <div class="marcas">
                 <div class="marcas-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/
-                    images?q=tbn:ANd9GcQuxyrxHTJALQaZZ0cWAly_orA64ctYlDejonBhlDtRBu_
-                    lEND3tXs4M75x45a6f-w3dpM&usqp=CAU" alt="natura logo">
+                    <img src="https://source.unsplash.com/random/360x360?r=1" alt="marca 1 random">
                 </div>
 
                 <div class="marcas-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/
-                    images?q=tbn:ANd9GcSoF3jhlplh5w8rq7j1xbDOGWZ-
-                    6AoDiWkyylxYNMveSzQfF7FQlgYaPpRGgyb6fkFvikg&usqp=CAU" alt="mahogany logo">
+                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="marca 2 random">
                 </div>
 
                 <div class="marcas-img">
-                    <img src="https://1.bp.blogspot.com/-vQbV8ru3HuI/V35xlkZRclI/AAAAAAABhyQ/zqxacsf12EAk3u9VvyT8DA5IDGyAgAsIgCLcB/s1600/trifil%2Blogo.jpg" alt="trifil logo">
+                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="marca 3 random">
                 </div>
 
             </div>
@@ -87,27 +87,27 @@
 
             <div class="produtos">
                 <div class="produtos-img">
-                    <img src="https://i.pinimg.com/474x/92/6f/66/926f66b6c2f201d53540c0dfa09680e2--womens-perfume-perfume-bottles.jpg" alt="perfume">
+                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="perfume">
                 </div>
 
                 <div class="produtos-img">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_664124-MLB44674094824_012021-O.jpg" alt="hidratante">
+                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="hidratante">
                 </div>
 
                 <div class="produtos-img">
-                    <img src="https://img.elo7.com.br/product/360x360/3D68C16/lingerie-calcinha-lacradora-cinta-e-sem-bojo-tam-gg-rubi-conjunto-lingerie-de-renda-com-cinta-liga.jpg" alt="lingerie">
+                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="lingerie">
                 </div>
 
                 <div class="produtos-img">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_679248-MLB27625175855_062018-O.jpg" alt="batom">
+                    <img src="https://source.unsplash.com/random/360x360?r=7" alt="batom">
                 </div>
 
                 <div class="produtos-img">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_739458-MLB27032481163_032018-O.jpg" alt="sabonete">
+                    <img src="https://source.unsplash.com/random/360x360?r=8" alt="sabonete">
                 </div>
 
                 <div class="produtos-img">
-                    <img src="https://img.elo7.com.br/product/360x360/37676E3/pijama-adulto-e-infantil-snoopy-pijama-mae-e-filho.jpg" alt="pijamas">
+                    <img src="https://source.unsplash.com/random/360x360?r=9" alt="pijamas">
                 </div> 
             </div>
         </div>
@@ -122,6 +122,13 @@
         </div>
     </section>
 
+    <footer id='footer' class="footer white-fundo2">
+        <p>
+          <a href="">Feito com <span class="heart">❤</span> por Matheus Henrique</a>  
+        </p>
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
 </body>
     <script src="./assets/js/script.js"></script>
 

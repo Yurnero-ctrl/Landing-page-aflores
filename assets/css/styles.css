@@ -188,7 +188,7 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
-    margin-left: 10rem;
+    margin-left: 2rem;
     margin-top: 10rem;
 }
 
@@ -235,7 +235,6 @@ p{
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.65);
 }
 
 .produtos-img img{
@@ -253,4 +252,114 @@ p{
     justify-content: center;
     height: 100vh;
     text-align: center;
+}
+.footer{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer a{
+    color: #444;
+}
+
+.heart{
+    color: red;
+}
+
+.footer p{
+    margin: 0;
+    padding: 3rem;
+}
+
+.close-menu{
+    display: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+}
+
+@media (max-width: 800px){
+    .inicio-content, .promocao-content{
+        grid-template-columns: 1fr;
+    }
+
+    .marcas-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .marcas-img img{
+        width: 100%;
+    }
+
+    .produtos-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .produtos-img img{
+        width: 100%;
+    }
+
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .close-menu-label::after{
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+
+    .menu-spacing{
+        display: none;
+    }
 }
